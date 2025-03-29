@@ -1,4 +1,63 @@
-<div>
-    <h1 class="text-blue-800">Header</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quibusdam.</p>
-</div>
+<header
+  class="w-[97%] mx-auto mt-2 text-[15px] min-[834px]:text-2xl flex justify-between"
+>
+  <div class="languages flex flex-col justify-center items-center lg:block">
+    <div class="de">
+      <span>DE</span>
+    </div>
+    <div class="en">
+      <span>EN</span>
+    </div>
+  </div>
+  <div class="title font-semibold text-[32px] flex item-center min-[834px]:mt-1.5 min-[834px]:text-5xl lg:mt-6">
+    <h1>Baumeister</h1>
+  </div>
+  <div class="navigation flex justify-center items-center">
+    <nav class="hidden lg:block">
+      <ul class="flex flex-col items-end">
+        <li class="about">
+          <a href="#">About</a>
+        </li>
+        <li class="services">
+          <a href="#">Services</a>
+        </li>
+        <li class="references">
+          <a href="#">References</a>
+        </li>
+        <li class="contact">
+          <a href="#">Contact</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="hamburger-menu lg:hidden">
+      <a class="hamburger-menu" href="#" onclick="showMenu()">
+        <img src="src/assets/images/Group 5.png" alt="hamburger menu icon" />
+      </a>
+    </div>
+    <div class="hide-nav-menu hidden">
+      <a href="#" class="hide-menu" onclick="hideMenu()">
+        <img
+          src="src/assets/images/Group 5 (1).png"
+          alt="hide hamburger menu icon"
+        />
+      </a>
+    </div>
+  </div>
+</header>
+<!-- Sidebar navigation-->
+<nav class="sidebar-nav-menu mt-20 mr-7 text-[32px] text-[#00672E] font-semibold hidden">
+  <ul class="flex flex-col gap-10 text-center">
+    <li class="about">
+      <a href="#">About</a>
+    </li>
+    <li class="services">
+      <a href="#">Services</a>
+    </li>
+    <li class="references">
+      <a href="#">References</a>
+    </li>
+    <li class="contact">
+      <a href="#">Contact</a>
+    </li>
+  </ul>
+</nav>
