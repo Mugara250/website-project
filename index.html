@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/dist/output.css">
+    <link rel="stylesheet" href="src/output.css">
     <title>Website project template</title>
 </head>
 <script>
@@ -21,8 +21,28 @@
         loadComponents('contact', 'src/sections/contact.html');
         loadComponents('footer', 'src/sections/footer.html');
     }
+
+    function showMenu() {
+        const hamburgerMenu = document.querySelector(".hamburger-menu");
+        const hideNavMenu = document.querySelector(".hide-nav-menu");
+        const sidebar = document.querySelector(".sidebar-nav-menu");
+
+        sidebar.style.display = "block";
+        hamburgerMenu.style.display = "none";
+        hideNavMenu.style.display = "block";
+    }
+
+    function hideMenu() {
+        const hamburgerMenu = document.querySelector(".hamburger-menu");
+        const hideNavMenu = document.querySelector(".hide-nav-menu");
+        const sidebar = document.querySelector(".sidebar-nav-menu");
+
+        hamburgerMenu.style.display = "block";
+        hideNavMenu.style.display = "none";
+        sidebar.style.display = "none";
+    }
 </script>
-<body>
+<body class="font-outfit">
     <div id="header"></div>
     <div id="hero"></div>
     <div id="contact"></div>
